@@ -50,11 +50,23 @@
   </script>
 </polymer-element>
 
+<polymer-element name="osom-header">
+  <template>
+	  	<tr>
+			  <shadow>
+			  </shadow>
+	  </tr>
+  </template>
+  <script>
+    Polymer('osom-header', {
+      name : ''
+    });
+  </script>
+</polymer-element>
+
 <polymer-element name="osom-header-sort" attributes="name">
   <template>
-	   <th>
-		  <td>{{ name }}</td>
-	   </th>
+		  <th>{{ name }}</th>
 	  <shadow>
 	  </shadow>
   </template>
@@ -65,7 +77,7 @@
   </script>
 </polymer-element>
 
-<polymer-element name="osom-filters"  attributes="source,columns">
+<polymer-element name="osom-filters">
   <template>
 	  <div>Filters</div>
 	  <shadow>
@@ -79,9 +91,9 @@
   </script>
 </polymer-element>
 
-<polymer-element name="osom-text-filter"  attributes="name">
+<polymer-element name="osom-text-filter"  attributes="name label">
   <template>
-	  <p><label for="{{ name }}">{{ name }}:</label> <input type="text" name="{{ name }}"></input></p>
+	  <p><label for="{{ name }}">{{ label }}:</label> <input type="text" name="{{ name }}"></input></p>
 	  <shadow>
 	   </shadow>
   </template>

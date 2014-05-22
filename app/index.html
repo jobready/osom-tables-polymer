@@ -25,8 +25,8 @@
 
 	<osom-table-container url="/api/v1/contract.json">
 		<osom-filters>
-			<osom-text-filter name="id"/>
-			<osom-text-filter name="name"/>
+			<osom-text-filter label="Id" name="id"/>
+			<osom-text-filter label="Name" name="name"/>
 		</osom-filters>
 		<osom-table>
 			<osom-header>
@@ -36,8 +36,7 @@
 			<osom-table-body />
 		</osom-table>
 	</osom-table-container>
-        
-
+	
       <script>
         document.addEventListener('WebComponentsReady', function() {
             // Perform some behaviour
